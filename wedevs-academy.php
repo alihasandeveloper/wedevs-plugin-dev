@@ -5,6 +5,7 @@
  * Plugin Version: 1.0
  * Author: Ali Hasan
  * Description: OPP based learning WordPress Plugin
+ * Text Domain: wedevs-academy
  */
 
 if (!defined('ABSPATH')) {
