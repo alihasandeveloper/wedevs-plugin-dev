@@ -29,8 +29,6 @@ class Addressbook
             include $template;
         }
 
-//        echo "<pre>".__DIR__."</pre>";
-
     }
 
     public function form_handler()
@@ -78,7 +76,6 @@ class Addressbook
 
         //redirect
 
-//
         $redirected_to = admin_url('admin.php?page=wedevs-academy&inserted=true');
         wp_redirect($redirected_to);
         exit;
