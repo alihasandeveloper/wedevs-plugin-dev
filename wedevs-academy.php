@@ -8,6 +8,8 @@
  * Text Domain: wedevs-academy
  */
 
+use Alihasan\WedevsAcademy\Installer;
+
 if (!defined('ABSPATH')) {
     exit;
 }
@@ -54,12 +56,8 @@ final class Wedevs_Academy
 
     public function activate()
     {
-        $installed = get_option('wd_academy_installed');
-        if (!$installed) {
-            update_option('wd_academy_installed', time());
-        }
-
-        update_option('wd_academy_version', WD_ACADEMY_VERSION);
+     $installer  = new Alihasan\WedevsAcademy\Installer();
+     $installer->run();
     }
 
     public function init_plugin()

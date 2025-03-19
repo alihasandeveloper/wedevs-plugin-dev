@@ -1,5 +1,7 @@
 <div class="wrap">
+
     <h1 class="wp-heading-inline">New Address</h1>
+    <?php var_dump($this->errors);?>
 
     <form method="post" action="">
         <table class="form-table">
